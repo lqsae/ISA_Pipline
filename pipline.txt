@@ -1,0 +1,7 @@
+根据一下模块名称，模块名称是对应的 shell 脚本名称，构建一个生信分析流程，可以利用 python 脚本串联，调用模块命令可利用 subprocess 模块, 数据库总的模块可以利用 json 文件配置
+QC.sh
+Align.sh
+ISPipline.sh
+SV.sh
+CNV.sh
+reference.cnv.sh

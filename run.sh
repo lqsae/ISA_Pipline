@@ -1,0 +1,1 @@
+bash /mnt/research/BI/qsliu/PROJETCT/CG1RD035_HY/003.24CGM521/ISA_Pipline/CNV.sh /mnt/research/BI/qsliu/yanfa/16.R2439-SMA-UBE3A/SMN/07.batch7-20241125_SMN_ONT/NGS/hg38/02.align/YF2024112012/YF2024112012.deduped.bam /mnt/research/BI/qsliu/PROJETCT/CG1RD035_HY/003.24CGM521/ISA_Pipline/test YF2024112012
