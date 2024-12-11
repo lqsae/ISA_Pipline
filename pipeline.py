@@ -207,8 +207,9 @@ class BioinformaticsPipeline:
         """运行拷贝数变异分析"""
         ref_genome = self.config.get("paths", "genome")
         genome_bed = self.config.get("paths", "genome_bed")
+        gene_bed = self.config.get("paths", "gene_bed")
         window_size = self.config.get("parameters", "window_size")
-        cmd = f"bash {self.pipeline_dir}/CNV.sh {bam} {ref_genome} {genome_bed} {window_size} {output_dir} {sample}"
+        cmd = f"bash {self.pipeline_dir}/CNV.sh {bam} {ref_genome} {genome_bed} {gene_bed} {window_size} {output_dir} {sample}"
         return self.run_command(cmd, "CNV Analysis")
     
     def run_reference_cnv(self, output_dir, sample, d4_file):

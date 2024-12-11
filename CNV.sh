@@ -1,12 +1,12 @@
 #!/bin/bash
-if [ $# != 6 ]
+if [ $# != 7 ]
 then
         echo ""
         echo "  Version:         v3.0 (2024-02-01)"
         echo "  Authors:         Qingshan Liu"
         echo "  Description:     Call CNV using cnvkit"
         echo ""
-        echo "  Usage:           bash $0 <bam> <genome> <genome_bed> <window_size>   <Output_dir>  <SampleName>"
+        echo "  Usage:           bash $0 <bam> <genome> <genome_bed> <gene_bed> <window_size>   <Output_dir>  <SampleName>"
         echo ""
         echo ""
         exit 1
@@ -15,10 +15,11 @@ fi
 Bam_file=$1
 genome=$2
 genome_bed=$3
-window_size=$4
-Output_dir=$5
+gene_bed=$4
+window_size=$5
+Output_dir=$6
 work_dir=$Output_dir
-Sample=$6
+Sample=$7
 Ref_version=hg38
 RefGenome=$genome
 Step_Name="CNV"
